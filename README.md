@@ -16,7 +16,7 @@ This project aims to develop a hand gesture recognition model using deep learnin
 ## Installation
 To get started with this project, you need to have the following dependencies installed:
 - Python 3.x
-- TensorFlow
+- Pytorch
 - Mediapipe
 - CUDA Toolkit (for GPU acceleration)
 - OpenCV
@@ -25,7 +25,8 @@ To get started with this project, you need to have the following dependencies in
 
 You can install the required Python packages using pip:
 ```sh
-pip install tensorflow mediapipe opencv-python pandas numpy
+pip install mediapipe opencv-python pandas numpy
+pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu112
 ```
 
 ## Data Creation
@@ -41,7 +42,7 @@ In this step, we perform the following tasks:
 To train the deep learning model, follow these steps:
 1. Load the annotated data from the CSV file.
 2. Preprocess the images and labels.
-3. Define the neural network architecture using TensorFlow.
+3. Define the neural network architecture using Pytorch.
 4. Train the model 
 5. Evaluate the model on the test dataset.
 
